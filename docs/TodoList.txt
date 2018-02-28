@@ -1,0 +1,11 @@
+TODO LIST
+
+1. Write requirements document. - DONE
+2. Write sequence diagram. - DONE
+3. Write class diagram. - DONE
+4. Write Application.java / ApplicationTest.java source. 
+5. Write Controller.java / ControllerTest.java source.
+6. Write WebResources.java / WebResourcesTest.java source.
+7. Write ServiceGateway.java / ServiceGatewayTest.java source.
+8. Write Service.java / ServiceTest.java source.
+9. Write Utilities.java / UtilitiesTest.java source.

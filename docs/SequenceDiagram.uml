@@ -1,0 +1,12 @@
+@startuml
+actor Client
+boundary ServiceGateway
+participant Service
+database Database
+Client -> ServiceGateway: To service gateway
+ServiceGateway -> Service: To service
+Service -> Database : To database
+Database -> Service: From database
+Service -> ServiceGateway: From service
+ServiceGateway -> Client: From service gateway
+@enduml

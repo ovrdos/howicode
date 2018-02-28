@@ -1,0 +1,21 @@
+@startuml
+package "com.ovrdos.code" #DDDDDD {
+class Application
+Application --|> com.ovrdos.web.WebController
+}
+package "com.ovrdos.web" #12131 {
+class WebController 
+class WebResources
+WebController -|> WebResources
+WebResources --|> com.ovrdos.service.ServiceGateway
+}
+package "com.ovrdos.service" #12131 {
+class ServiceGateway
+class Service
+ServiceGateway -|> Service
+Service --|> com.ovrdos.utils.Utilities
+}
+package "com.ovrdos.utils" #12131 {
+class Utilities
+}
+@enduml

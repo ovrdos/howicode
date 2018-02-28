@@ -1,0 +1,48 @@
+How I Code
+Requirements Documentation
+
+This documet describes the process, sources and data structures I use to code a typical application.
+
+PROCESS
+
+The process for a typical application deployment is as follows. Note that this prcess is more of a framework and varies from application to application. 
+
+1. Write requirements documentation. Requirements highlight the application, its features as well as any other caveats and consideration necessary build the application. Requirement docs contain action diagrams, sequence diagrams, class diagrams, data structure definitions, UX wireframes, graphics and any other assets required to fully define the scope of the design effort.
+
+2. Build bootstrap application. This step involves creating the application repository, generating application baseline and installing any dependencies. For this particular application we are using Maven and the Maven archtype repository to generate our application stub from the proper archetype. This process creates the pom.xml file and includes any base dependencies in the pom.  
+
+3. Build data sources. This step involves creating the data source definitions defined in the initial requirements documentation. Thsi process is necessary to provide the data for the application to work with (if necessary). Many times the data sources already exist or are connection to a web service instead of a relational or NOSQL data source.
+
+
+SOURCES
+
+The sources I will make to describe a basic Java/REST/Web application. 
+
+Application.java - Application startup intialization class.
+Service.java - Service interface class.
+ServiceImpl.java - Service implementation class.
+Utilities.java - Java code for utility class.
+Controller.java - REST controller interface class.
+ControllerImpl.java - REST controller implementation class.
+WebResourcesImpl.java - Web resoucres implementation class.
+index.jsp - Bacic UI html5/css/javascript file.
+
+ApplicationTest.java - Application startup intialization class test.
+ServiceTest.java - Service interface class test.
+ServiceImplTest.java - Service implementation class test.
+UtilitiesTest.java - Java code for utility class test.
+ControllerTest.java - REST controller interface class test.
+ControllerImplTest.java - REST controller implementation class test.
+WebResourcesImplTest.java - Web resoucres implementation class test.
+
+
+DATA SOURCES
+
+The data sources I will make to describe a basic web application.
+
+web_data_profiles
+web_users
+web_login_credentials
+web_user_details
+web_application_resources
+
