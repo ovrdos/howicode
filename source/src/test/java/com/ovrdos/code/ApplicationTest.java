@@ -31,11 +31,18 @@ public class ApplicationTest {
         assertTrue("CONFIG NOT LOADED!", (Boolean) Whitebox.getInternalState(app, "configLoaded"));
     }
 
-    @Test
+    @Test(expected = RuntimeException.class)
     public void given_Bad_Config_Verify_App_Not_Loaded() {
         String[]  configs = new String[1];
         configs[0] = "CONFIG_ERROR";
         app.main(configs);
         assertFalse("CONFIG LOADED ANYWAY!", (Boolean) Whitebox.getInternalState(app, "configLoaded"));
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void given_Bad_Config_Verify_RTExceptionThrown() {
+        String[]  configs = new String[1];
+        configs[0] = "CONFIG_ERROR";
+        app.main(configs);
     }
 }

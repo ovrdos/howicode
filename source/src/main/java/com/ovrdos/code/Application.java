@@ -13,13 +13,11 @@ public class Application {
     private static boolean configLoaded = false;
 
 
-    public static void main(String args[]) {
+    public static void main(String args[])throws RuntimeException {
         String config = CONFIG_ERROR;
         if (args!=null) {
             if (!(args[0]).equalsIgnoreCase(CONFIG_OK)) {
-                applicationStarted = false;
-                System.out.println(CONFIG_ERROR + APP_NOT_STARTED + config);
-                return;
+                throw new RuntimeException(CONFIG_ERROR + APP_NOT_STARTED + config);
             }
         }
         //This part of the application runs the initial
