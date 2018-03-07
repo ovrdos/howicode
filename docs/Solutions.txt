@@ -1,0 +1,14 @@
+1. Testing
+    A. Testing for Successful results.
+    B. Testing for Anolomolies.
+    C. Testing for exception handling.
+
+2. Debugging
+    A. Debugging a variable typo,in model. 
+    B. Debugging a misplaced header variable. 
+    C. Remote debugging.
+
+3. Best Practices
+    A. NPE exception hadling with Optional objects.
+    B. Interface/Implementation coding.
+    C. SOLID coding practices.
